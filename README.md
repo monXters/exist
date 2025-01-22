@@ -1,1 +1,1 @@
-Just a splash page for a project I am working on. My goal is to take my web development skills to a higher level and create full-stack web apps. 
+A splash page for a project I am working on. My plan is to continue growing my web development skills and to create full-stack web apps. 
