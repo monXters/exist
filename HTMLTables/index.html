@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A table project</title>
+    <link rel="stylesheet" href="Resources/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>HTML Tables</h1>
+      <table class="screenSizes">
+        <tr>
+          <!--A table row with five <th> sections -->
+          <th scope="col">Screen Size</th>
+          <th scope="col">Mobile</th>
+          <!--A table header because it will be formatted with a color-->
+          <th scope="col">Tablet</th>
+          <th scope="col">Desktop</th>
+          <th scope="col">TV</th>
+        </tr>
+        <tr>
+          <th scope="row">Small</th>
+          <td>360 x 800</td> <!-- phone -->
+          <td>1024 x 768</td> <!-- tablet -->
+          <td>1366 x 768</td> <!-- desktop -->
+          <td>1280 x 720</td> <!-- TV -->
+        </tr>
+        <tr>
+          <th scope="row">Medium</th>
+          <td class="med">390 x 844</td> <!-- phone -->
+          <td class="med">1280 x 800</td> <!-- tablet -->
+          <td class="med">1920 x 1080</td> <!-- desktop -->
+          <td class="med">3840 x 2160</td> <!-- TV -->
+        </tr>
+        <tr>
+          <th scope="row">Large</th>
+          <td>428 x 926</td>
+          <!-- phone -->
+          <td>2048 x 1536</td>
+          <!-- tablet -->
+          <td>3840 x 2160</td>
+          <!-- desktop -->
+          <td>8192 x 4320</td>
+          <!-- TV -->
+        </tr>
+        <caption>
+          Screen sizes on modern devices
+        </caption>
+      </table>
+      <table class="notes">
+        <caption>
+          Notes on using html tables
+        </caption>
+        <td>
+          <ul>
+            <!-- Attempting to color only the bg of the text, and not the whole line. A pseudo class would do the job, but is far more complex. I will attempt to use a button instead and see the result -->
+            <!-- <li>The opening tag for a table is <span class="colored">&lt;table&gt;</span></li> -->
+            <li>The opening tag for a table is <button>&lt;table&gt;</button></li>
+            <li>Headers are defined in multiple ways:</li>
+            <ol>
+              <li><button>&lt;thead&gt;</button></li>
+              <li><button>&lt;th&gt;</button></li>
+            </ol>
+            <li>
+              Table head elements are further defined with
+              <button>scope=&quot;col&quot;</button>, or <button>scope=&quot;row&quot;</button>. CSS rules allow
+              you to change the styling to stand out from other elements for
+              example:
+              <ul class="aboutHeadings">
+                <li>
+                  Using a scope of col allows you to style the tops of columns
+                </li>
+                <li>
+                  Using a scope of row allows you to style a single cell, for
+                  example the left side cell of each row.
+                </li>
+              </ul>
+            </li>
+            <li>
+              More info can be found at
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+                >https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</a
+              >
+            </li>
+          </ul>
+        </td>
+      </table>
+    </div>
+  </body>
+</html>
