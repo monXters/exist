@@ -1,0 +1,97 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Color palette 
+original pink: #E876EC
+darker pink: #C665C9
+lighter pink: #F17AF5
+going dark pink: #A554A8
+beginning dark pink: #844386
+deep dark pink: #633264
+double dark pink: #472C47
+highlight green: #B6CC56
+dark green-gray: #A8A99E
+light pink-gray: #AEA4B0
+dark pink-gray: #585359
+*/
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+table {
+  border: 2px solid #f17af5;
+  margin-bottom: 20px;
+}
+
+th[scope="col"] {
+  color: #fff;
+  background-color: #8b5e8c;
+  padding: 6px;
+  width: 120px;
+}
+
+th[scope="row"] {
+  color: #fff;
+  background-color: #c979cb;
+  padding: 6px;
+  width: 120px;
+}
+.med {
+  background-color: rgb(177, 177, 177);
+}
+
+td {
+  background-color: rgb(212, 211, 211);
+  text-align: center;
+}
+
+caption {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+li {
+  line-height: 25px;
+}
+
+.notes {
+  margin: 20px auto;
+  width: 70%;
+}
+
+ol {
+  list-style-position: inside;
+  margin: 0px;
+  padding: 0px;
+}
+
+ol li {
+    text-align: left;
+    padding-left: 14px;
+    width: ;
+}
+
+.screenSizes {
+    width: 100%;
+}
+
+ul li {
+    list-style-position: inside;
+    text-align: left;
+}
+
+button {
+    all: unset;
+    background-color: rgb(128, 204, 255);
+    font-family: monospace;
+    padding: 0px 8px;
+    line-height: 18px;
+}
