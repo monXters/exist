@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Reference</title>
+    <link rel="stylesheet" href="Resources/styles.css" />
+  </head>
 
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <h3 class="navTitle">Topics:</h3>
+        <ul>
+          <li><a href="#resolution" />Resolution</li>
+          <li><a href="#tables" />Tables</li>
+          <li><a href="#position" />Positioning</li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>HTML/CSS Reference Page</h1>
+        <h3 id="resolution">Screen Resolution Notes</h3>
+        <!-- id tag to jump to section 'resolution' -->
+        <table class="tableMain">
+          <caption>
+            Screen Resolution
+          </caption>
+          <tr>
+            <!--A table row with five <th> sections -->
+            <th scope="col">Screen Size</th>
+            <th scope="col">Mobile</th>
+            <!--A table header because it will be formatted with a color-->
+            <th scope="col">Tablet</th>
+            <th scope="col">Desktop</th>
+            <th scope="col">TV</th>
+          </tr>
+          <tr>
+            <th scope="row">Small</th>
+            <td>360 x 800</td>
+            <!-- phone -->
+            <td>1024 x 768</td>
+            <!-- tablet -->
+            <td>1366 x 768</td>
+            <!-- desktop -->
+            <td>1280 x 720</td>
+            <!-- TV -->
+          </tr>
+          <tr>
+            <th scope="row">Medium</th>
+            <td class="med">390 x 844</td>
+            <!-- phone -->
+            <td class="med">1280 x 800</td>
+            <!-- tablet -->
+            <td class="med">1920 x 1080</td>
+            <!-- desktop -->
+            <td class="med">3840 x 2160</td>
+            <!-- TV -->
+          </tr>
+          <tr>
+            <th scope="row">Large</th>
+            <td>428 x 926</td>
+            <!-- phone -->
+            <td>2048 x 1536</td>
+            <!-- tablet -->
+            <td>3840 x 2160</td>
+            <!-- desktop -->
+            <td>8192 x 4320</td>
+            <!-- TV -->
+          </tr>
+        </table>
+        <h3 id="tables">Tables in HTML</h3>
+        <table class="tableMain">
+          <caption>
+            HTML tables
+          </caption>
+          <tr>
+            <th scope="col">HTML tag</th>
+            <th scope="col" colspan="4">Notes</th>
+          </tr>
+          <tr>
+            <!-- table tag -->
+            <th scope="row" class="htmlTag"><button>&lt;table&gt;</button></th>
+            <td colspan="4">HTML tag used to create a table</td>
+          </tr>
+          <tr>
+            <!-- th tag -->
+            <th scope="row" class="htmlTag"><button>&lt;th&gt;</button></th>
+            <td colspan="4">
+              Designates a cell as a table header. May be the child of a
+              <button>&lt;tr&gt;</button>element allowing a row to have styling
+              to appear as the heading of a table
+            </td>
+          </tr>
+          <tr>
+            <!-- tr tag -->
+            <th scope="row" class="htmlTag"><button>&lt;tr&gt;</button></th>
+            <td>
+              A table row element often contains several
+              <button>&lt;td&gt;</button> elements to hold data in the table
+            </td>
+          </tr>
+          <tr>
+            <!-- td tag -->
+            <th scope="row" class="htmlTag"><button>&lt;td&gt;</button></th>
+            <td>
+              A table data element contains the data which populates the<button>
+                &lt;tr&gt;</button
+              >, <button>&lt;td&gt;</button> &amp;
+              <button>&lt;tbody&gt;</button> elements.
+            </td>
+          </tr>
+          <tr>
+            <!-- tbody tag -->
+            <th scope="row" class="htmlTag"><button>&lt;tbody&gt;</button></th>
+            <td>
+              A table body element is a semantic tag that can be understood
+              clearly as the main body of the table.
+            </td>
+          </tr>
+          <tr>
+            <!-- colspan property -->
+            <th scope="row" class="htmlTag">
+              <button>&lt;colspan=""&gt;</button>
+            </th>
+            <td>
+              A property that can be used with a value so that a cell can span
+              multipe columns. The property sits within the opening tag
+            </td>
+          </tr>
+          <tr>
+            <!-- scope property -->
+            <th scope="row" class="htmlTag">
+              <button>&lt;scope="row"&gt;</button
+              ><button>&lt;scope="col"&gt;</button>
+            </th>
+            <td>
+              A property that can be used within a
+              <button>&lt;th&gt;</button> tag to specify the role of the header
+              element. As an example: If you want the top of a column to have a
+              different look, you can use <button>&lt;scope="col"&gt;</button>.
+              If you want the left side of a row to have a different look, use
+              <button>&lt;scope="row"&gt;</button>.
+            </td>
+          </tr>
+        </table>
+        <table class="notes">
+          <caption>
+            Table Syntax Code Snippet
+          </caption>
+          <th scope="col" class="tableMain">HTML</th>
+          <th scope="col" class="tableMain">CSS</th>
+          <tr>
+            <td class="snipL">
+              <pre><code>
+                &lt;table class="notes"&gt;
+                  &lt;caption&gt;
+                    Table Syntax Code Snippet
+                  &lt;/caption&gt;
+                  &lt;th scope="col" class="tableMain"&gt;HTML&lt;/th&gt;
+                  &lt;th scope="col" class="tableMain"&gt;CSS&lt;/th&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;HTML code snippet here...&lt;/td&gt; &lt;!-- left cell --&gt;
+                    &lt;td&gt;CSS code snippet here...&lt;/td&gt; &lt;!-- right cell --&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+                </code></pre>
+            </td>
+            <td class="snipR">
+              <code>
+                <pre>
+ 
+            table {
+                border: 2px solid #f17af5;
+                margin-bottom: 20px;
+              }
+              
+            th[scope="col"] {
+                color: #fff;
+                background-color: #8b5e8c;
+                padding: 6px;
+                width: 120px;
+              }
+              
+            th[scope="row"] {
+                color: #3c283d;
+                background-color: #f1d6f2;
+                padding: 6px;
+                width: 120px;
+              }
+            </pre
+                >
+              </code>
+            </td>
+          </tr>
+        </table>
+        <h3 id="position">Positioning Elements</h3>
+        <!-- in progress...replace list data with correct info -->
+        <td>
+          <ul>
+            <li>
+              The opening tag for a table is <button>&lt;table&gt;</button>
+            </li>
+            <li>Headers are defined in multiple ways:</li>
+            <ol>
+              <li><button>&lt;thead&gt;</button></li>
+              <li><button>&lt;th&gt;</button></li>
+            </ol>
+            <li>
+              Table head elements are further defined with
+              <button>scope=&quot;col&quot;</button>, or
+              <button>scope=&quot;row&quot;</button>. CSS rules allow you to
+              change the styling to stand out from other elements for example:
+              <ul class="aboutHeadings">
+                <li>
+                  Using a scope of col allows you to style the tops of columns
+                </li>
+                <li>
+                  Using a scope of row allows you to style a single cell, for
+                  example the left side cell of each row.
+                </li>
+              </ul>
+            </li>
+            <li>
+              More info can be found at
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
+                >https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</a
+              >
+            </li>
+          </ul>
+        </td>
+      </div>
+    </div>
+  </body>
+</html>
