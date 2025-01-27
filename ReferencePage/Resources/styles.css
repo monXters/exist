@@ -60,10 +60,6 @@ th[scope="row"] {
   width: 120px;
 }
 
-.med {
-  background-color: rgb(177, 177, 177);
-}
-
 td {
   background-color: rgb(212, 211, 211);
   padding: 8px 8px;
@@ -74,6 +70,7 @@ caption {
   font-size: 16px;
   font-weight: 700;
   color: #3c283d;
+  margin-bottom: 10px;
 }
 
 li {
@@ -132,4 +129,34 @@ h3 {
     color: #3c283d;
 }
 
+.container-flex {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    border: 2px solid #f17af5;
+    margin: 10px auto;
+    margin-bottom: 150px;
+  }
+  
+  .box {
+    max-width: 450px;
+    height: auto;
+    background-color: rgb(212, 211, 211);
+    color: #1e131e;
+    text-align: left;
+    padding: 8px;
+    margin: 8px;
+    border: 2px solid #8b5e8c;
+    border-radius: 8px;
+  }
 
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3c283d;
+    text-align: center;
+    margin-bottom: 10px;
+  }
