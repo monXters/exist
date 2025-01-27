@@ -1,1 +1,135 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #3c283d;
+  margin: 10px auto;
+}
+
+.nav {
+  background-color: #f1d6f2;
+  position: fixed;
+  height: 100%;
+  top: 10px;
+}
+
+.navTitle {
+  color: #6a466b;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding: 0px auto;
+}
+
+.content {
+  margin-left: 120px;
+}
+
+a {
+  text-decoration: none;
+}
+nav li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+body {
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+
+table {
+  border: 2px solid #f17af5;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+th[scope="col"] {
+  color: #fff;
+  background-color: #8b5e8c;
+  padding: 6px;
+  width: 120px;
+}
+
+th[scope="row"] {
+  color: #3c283d;
+  background-color: #f1d6f2;
+  padding: 6px;
+  width: 120px;
+}
+
+.med {
+  background-color: rgb(177, 177, 177);
+}
+
+td {
+  background-color: rgb(212, 211, 211);
+  padding: 8px 8px;
+  color: #1e131e;
+}
+
+caption {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3c283d;
+}
+
+li {
+  line-height: 25px;
+}
+
+.notes {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.tableMain {
+  margin: 20px auto;
+  margin-top: 10px;
+  width: 90%;
+}
+
+ol {
+  list-style-position: inside;
+  margin: 0px;
+  padding: 0px;
+}
+
+ol li {
+  text-align: left;
+  padding-left: 14px;
+}
+
+ul li {
+  list-style-position: inside;
+  text-align: left;
+}
+
+button {
+  all: unset;
+  background-color: rgb(195, 231, 255);
+  color: black;
+  font-family: monospace;
+  padding: 0px 8px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/* Table properties for code snippet table */
+.snipL {
+  vertical-align: top;
+}
+
+.snipR {
+  vertical-align: top;
+}
+
+h3 {
+    margin-left: 44px;
+    margin-bottom: 10px;
+    color: #3c283d;
+}
+
 
