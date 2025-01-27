@@ -45,13 +45,13 @@
           </tr>
           <tr>
             <th scope="row">Medium</th>
-            <td class="med">390 x 844</td>
+            <td>390 x 844</td>
             <!-- phone -->
-            <td class="med">1280 x 800</td>
+            <td>1280 x 800</td>
             <!-- tablet -->
-            <td class="med">1920 x 1080</td>
+            <td>1920 x 1080</td>
             <!-- desktop -->
-            <td class="med">3840 x 2160</td>
+            <td>3840 x 2160</td>
             <!-- TV -->
           </tr>
           <tr>
@@ -192,41 +192,55 @@
           </tr>
         </table>
         <h3 id="position">Positioning Elements</h3>
-        <!-- in progress...replace list data with correct info -->
-        <td>
-          <ul>
-            <li>
-              The opening tag for a table is <button>&lt;table&gt;</button>
-            </li>
-            <li>Headers are defined in multiple ways:</li>
-            <ol>
-              <li><button>&lt;thead&gt;</button></li>
-              <li><button>&lt;th&gt;</button></li>
-            </ol>
-            <li>
-              Table head elements are further defined with
-              <button>scope=&quot;col&quot;</button>, or
-              <button>scope=&quot;row&quot;</button>. CSS rules allow you to
-              change the styling to stand out from other elements for example:
-              <ul class="aboutHeadings">
-                <li>
-                  Using a scope of col allows you to style the tops of columns
-                </li>
-                <li>
-                  Using a scope of row allows you to style a single cell, for
-                  example the left side cell of each row.
-                </li>
-              </ul>
-            </li>
-            <li>
-              More info can be found at
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
-                >https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</a
-              >
-            </li>
-          </ul>
-        </td>
+        <h4>Position Elements With Flexbox</h4>
+        <div class="container-flex">
+          <div class="box">
+            1. Define a parent element in HTML where you wish to apply flexbox
+            styling rules
+          </div>
+
+          <div class="box">
+            2. Use a CSS rule to apply <button>display: flex;</button> to the
+            <em>parent element</em>
+          </div>
+          <div class="box">
+            3. There is a main axis (horizontal), and a cross axis (vertical)
+          </div>
+          <div class="box">
+            4. Use <button>justify-content:</button> within the <em>parent element</em>
+            rules to place content on the main axis
+          </div>
+          <div class="box">
+            5. Use <button>align-items:</button> within the parent element rules
+            to place content on the cross axis
+          </div>
+          <div class="box">
+            6. Place items on each axis using one of three values:
+            <button>flex-start;</button>, <button>flex-end;</button> and
+            <button>center;</button>
+          </div>
+          <div class="box">
+            7. Put space around child containers using a
+            <button>justify-content:</button> value of
+            <button>space-between;</button>, <button>space-around;</button> and
+            <button>space-evenly;</button>
+          </div>
+          <div class="box">
+            8. Use <button>flex-direction</button> to control the direction of
+            the main axis which will influence previously mentioned flex
+            properties
+          </div>
+          <div class="box">
+            9. The default setting of <button>flex-direction</button> is set to
+            <button>row</button>, or use <button>column</button> for vertical
+            layout.
+          </div>
+          <div class="box">
+            10. Use <button>flex-wrap:</button> with a value of
+            <button>wrap;</button> to wrap overflowing boxes, or
+            <button>nowrap;</button> to allow elements to shrink-to-fit screen
+          </div>
+        </div>
       </div>
     </div>
   </body>
