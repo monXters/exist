@@ -1,8 +1,21 @@
+<!-- Cheatsheet Project -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>HTML Reference</title>
     <link rel="stylesheet" href="Resources/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -10,13 +23,14 @@
       <nav class="nav">
         <h3 class="navTitle">Topics:</h3>
         <ul>
-          <li><a href="#resolution" />Resolution</li>
-          <li><a href="#tables" />Tables</li>
-          <li><a href="#position" />Positioning</li>
+          <li><a href="#top">Top</a></li>
+          <li><a href="#resolution">Resolution</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#position">Positioning</a></li>
         </ul>
       </nav>
       <div class="content">
-        <h1>HTML/CSS Reference Page</h1>
+        <h1 id="top">HTML/CSS Reference Page</h1>
         <h3 id="resolution">Screen Resolution Notes</h3>
         <!-- id tag to jump to section 'resolution' -->
         <table class="tableMain">
@@ -141,7 +155,7 @@
             </td>
           </tr>
         </table>
-        <table class="notes">
+        <table class="tableMain">
           <caption>
             Table Syntax Code Snippet
           </caption>
@@ -207,7 +221,8 @@
             3. There is a main axis (horizontal), and a cross axis (vertical)
           </div>
           <div class="box">
-            4. Use <button>justify-content:</button> within the <em>parent element</em>
+            4. Use <button>justify-content:</button> within the
+            <em>parent element</em>
             rules to place content on the main axis
           </div>
           <div class="box">
