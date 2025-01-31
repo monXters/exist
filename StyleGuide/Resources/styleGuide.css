@@ -1,0 +1,233 @@
+/* Styleguide Project */
+/* Another Disclaimer: This was a learning exercise and some rules may be divided between different tags which is not ideal. */
+
+* {
+  font-family: Lunasima, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #3c283d;
+  margin: 20px auto 5px auto;
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  display: block;
+}
+
+td h1 {
+  color: #f1f1f1;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  color: #3c283d;
+}
+
+td h3 {
+  color: #f1f1f1;
+}
+
+h4 {
+  width: 100%;
+  text-align: left;
+  color: #3c283d;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+ul {
+  margin-right: 20px;
+}
+.content {
+  margin: auto;
+}
+
+body {
+  background-color: #f1f1f1;
+  justify-content: center;
+}
+
+.color-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+  border: 2px solid #f17af5;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  background-color: #c5c5c5;
+  max-width: 950px;
+}
+
+.eachColor {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  width: 220px;
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.italic {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  color: #f1f1f1;
+}
+.font-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  flex-wrap: wrap;
+  border: 2px solid #f17af5;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  max-width: 950px;
+  background-color: #c5c5c5;
+}
+
+.fontLayoutLeft {
+  height: 50px;
+  background-color: #8b5e8c;
+  color: #f1f1f1;
+  padding: 8px;
+  margin: 10px 5px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  white-space: nowrap;
+}
+
+.fontLayoutRight {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  height: auto;
+  background-color: #f1f1f1;
+  color: #3c283d;
+  padding: 8px;
+  margin: 10px 10px 10px 5px;
+  border: #f17af5 2px solid;
+  width: 66%;
+  min-width: 300px;
+  word-wrap: break-word;
+}
+
+.fontContentLeft {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.fontContentRight {
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.box {
+  width: 200px;
+  height: 70px;
+  background-color: rgb(212, 211, 211);
+  color: #c5c5c5;
+  padding: 8px;
+  margin: 8px;
+  border: 2px solid #8b5e8c;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Color swatch boxes */
+.darkpurple {
+  background-color: #3c283d;
+}
+
+.lightpurple {
+  background-color: #8b5e8c;
+}
+
+.brightpink {
+  background-color: #f17af5;
+  color: #3c283d;
+}
+
+.lightgraypink {
+  background-color: #d4d3d3;
+  color: #3c283d;
+}
+
+.ultralightpink {
+  background-color: #f1f1f1;
+  color: #3c283d;
+}
+
+.babyblue {
+  background-color: #c3e7ff;
+  color: #3c283d;
+}
+
+.fontRoboto {
+  font-family: Roboto, sans-serif;
+}
+
+.fontLunasima {
+  font-family: Lunasima, sans-serif;
+}
+
+.fontArial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontSans {
+  font-family: sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+td[scope="col"] {
+  color: #c5c5c5;
+  background-color: #8b5e8c;
+  font-family: Lunasima;
+  height: 50px;
+  padding: 8px;
+}
+
+td.tableLeft {
+  width: 33.33%;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+td.tableRight {
+  color: #3c283d;
+  background-color: #f1f1f1;
+  border: #f17af5 solid 2px;
+  width: 66.66%;
+}
+
+table {
+  width: 100%;
+  margin: 10px;
+}
+/* media queries */
+
+@media (max-width: 500px) {
+  body {
+    background-color: #d4d3d3;
+  }
+}
